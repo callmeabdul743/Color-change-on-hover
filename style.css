@@ -6,26 +6,33 @@
 .main{
     width: 100vw;
     height: 100vh;
-    background-image: url("pic/bg.jpg");
-    background-position: center;
+    background-image: url("pic/back.png");
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: end;
+    filter:;
 }
 .items{
     width: 20%;
-    height: 80%;
+    height: 70%;
     background-size: contain;
     background-repeat: no-repeat;
+    filter: grayscale(5) blur(3px);
+    transition: filter 1s;
+}
+.items:hover{
+    filter: grayscale(0) blur(0px);
 }
 .item1{
-    background-image: url(pic/1.png);
+    background-image: url(pic/2.png);
     background-position: -15px 110%;
 }
 .item2{
+    background-image: url(pic/1.png);
     background-position: -15px 110%;
-    background-image: url(pic/2.png);
+
 }
 .item3{
     background-position: -15px 110%;
@@ -34,6 +41,7 @@
 }
 .item4{
     background-image: url(pic/4.png);
+    background-size: contain;
     background-position: -15px 110%;
 }
 .item5{
